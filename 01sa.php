@@ -1,16 +1,17 @@
 <?php
 	$Sinnoh = array(
-		array("<b><p style=\"padding-left:16px\">id","<b><p style=\"padding-left:31px\">species","<b><p style=\"padding-left:18px\">type1","<b><p style=\"padding-left:24px\">type2","<b><p style=\"padding-left:41px\">ability","<b><p style=\"padding-left:20px\">hp","<b><p style=\"padding-left:14px\">atk","<b><p style=\"padding-left:15px\">def"),
+		array("id","species","type1","type2","ability","hp","atk","def"),
 
 		array(1,"Balbasaur","Grass","Poison","Overgrow",45,49,49),
 
-		array(2,"<p style=\"padding-left:36px\">Ivysaur","Grass","Poison","Overgrow",45,49,49),
+		array(2,"Ivysaur","Grass","Poison","Overgrow",45,49,49),
 
-		array(3,"<p style=\"padding-left:25px\">Venusaur","Grass","Poison","Overgrow",45,49,49),
+		array(3,"Venusaur","Grass","Poison","Overgrow",45,49,49),
 
-		array(4,"<p style=\"padding-left:5px\">Charmander","<p style=\"padding-left:31px\">Fire","<p style=\"padding-left:34px\">N/A","<p style=\"padding-left:49px\">Blaze",39,52,43),
+		array(4,"Charmander","Fire","N/A","Blaze",39,52,43),
 
-		array(5,"<p style=\"padding-left:7px\">Charmeleon","<p style=\"padding-left:31px\">Fire","<p style=\"padding-left:34px\">N/A","<p style=\"padding-left:49px\">Blaze",58,64,58)
+		array(5,"Charmeleon","Fire","N/A","Blaze",58,64,58),
+		array(6,"Squirtle","Water","N/A","Torrent",44,48,65)
 	);
 
 	echo "<style type=\"text/css\">
@@ -51,18 +52,18 @@
    	echo "</div>";
 
 	echo "<div id=\"ColsRow\">";
+	echo "<table rules=\"all\">";
 	for($rows=0; $rows < count($Sinnoh); $rows++){
-		echo "<table rules=\"all\">";
 			echo "<tr>";
 				for ($col = 0; $col < count($Sinnoh[$rows]); $col++) {
-					echo "<td>";
-					echo "<p>";
-		    		echo $Sinnoh[$rows][$col];
-		    		echo "</p>";
-		    		echo "</td>";
-		    	}
-	    	echo "</tr>";
-    	echo "</table>";
+				echo "<td>";
+				echo "<p>";
+		    	echo $Sinnoh[$rows][$col];
+		    	echo "</p>";
+		    	echo "</td>";
+		    }
+	    echo "</tr>";
     }
+    echo "</table>";
     echo "</div>";
 ?>
