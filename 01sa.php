@@ -40,8 +40,8 @@
 
 		#counting{
 			position:relative;
-			top: 300px;
-			left: 34px;
+			top: 15px;
+			left: 55px;
 
 		}
 
@@ -61,18 +61,6 @@
 	$count = 0;
 	$count_one = 0;
 
-	echo "<div id=\"counting\">";
-	    for($rows=0; $rows < count($Sinnoh); $rows++){
-	    	$count_one++;
-			for ($col = 0; $col < count($Sinnoh[$rows]); $col++) {
-				$count++;
-	    	}
-	    }
-	    echo "<p>Number of Elements: ";
-	    	echo $count_one+$count;
-	    echo "</p>";
-   	echo "</div>";
-
 	echo "<div id=\"ColsRow\">";
 	echo "<table rules=\"all\">";
 	for($rows=0; $rows < count($Sinnoh); $rows++){
@@ -88,6 +76,18 @@
     }
     echo "</table>";
     echo "</div>";
+
+
+    echo "<div id=\"counting\">";
+	    for($rows=0; $rows < count($Sinnoh); $rows++){
+	    	$count_one++;
+			for ($col = 0; $col < count($Sinnoh[$rows]); $col++) {
+				$count++;
+	    	}
+	    }
+	    echo "Number of Elements: ";
+	    echo $count_one+$count;
+   	echo "</div>";
 
 
     echo "<div id=\"favorite\">";
