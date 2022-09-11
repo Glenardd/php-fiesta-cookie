@@ -78,7 +78,7 @@
     echo "</div>";
 
 
-<<<<<<< HEAD
+
     echo "<div id=\"favorite\">";
     		for($rows=0; $rows < count($Sinnoh); $rows++){
 				for ($cols = 0; $cols < $rows; $col++) {
@@ -96,7 +96,7 @@
 		    	echo $Sinnoh[$rows][$col];
 		    	echo "</p>";
 		    	echo "</td>";
-=======
+
     echo "<div id=\"counting\">";
 	    for($rows=0; $rows < count($Sinnoh); $rows++){
 	    	$count_one++;
@@ -120,7 +120,6 @@
 	    	}
 	    }
    	}
->>>>>>> 725d6699b8b68c63e0b524de143b159a763b188a
     echo "</div>";
 
 ?>
