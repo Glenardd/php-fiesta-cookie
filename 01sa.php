@@ -1,4 +1,6 @@
 <?php
+	echo "<div id=\"header\"><h1>TEAM SINNOH</h1></div>";
+
 	$Sinnoh = array(
 		array("id","species","type1","type2","ability","hp","atk","def"),
 
@@ -38,27 +40,26 @@
 
 		#counting{
 			position:relative;
-			top: 300px;
-			left: 34px;
+			top: 15px;
+			left: 55px;
 
 		}
+
+		#favorite{
+			position:relative;
+			bottom: 30px;
+			left: 55;
+		}
 		
+		#header{
+			position: relative;
+			top: 40px;
+			left: 46px;
+		}
 
 	</style>";
 	$count = 0;
 	$count_one = 0;
-
-	echo "<div id=\"counting\">";
-	    for($rows=0; $rows < count($Sinnoh); $rows++){
-	    	$count_one++;
-			for ($col = 0; $col < count($Sinnoh[$rows]); $col++) {
-				$count++;
-	    	}
-	    }
-	    echo "<p>Number of Elements: ";
-	    	echo $count_one+$count;
-	    echo "</p>";
-   	echo "</div>";
 
 	echo "<div id=\"ColsRow\">";
 	echo "<table rules=\"all\">";
@@ -77,6 +78,7 @@
     echo "</div>";
 
 
+<<<<<<< HEAD
     echo "<div id=\"favorite\">";
     		for($rows=0; $rows < count($Sinnoh); $rows++){
 				for ($cols = 0; $cols < $rows; $col++) {
@@ -94,6 +96,31 @@
 		    	echo $Sinnoh[$rows][$col];
 		    	echo "</p>";
 		    	echo "</td>";
+=======
+    echo "<div id=\"counting\">";
+	    for($rows=0; $rows < count($Sinnoh); $rows++){
+	    	$count_one++;
+			for ($col = 0; $col < count($Sinnoh[$rows]); $col++) {
+				$count++;
+	    	}
+	    }
+	    echo "Number of Elements: ";
+	    echo $count_one+$count;
+   	echo "</div>";
+
+
+    echo "<div id=\"favorite\">";
+    for($rows=0; $rows < count($Sinnoh); $rows++){
+		for ($col = 0; $col < count($Sinnoh[$rows]); $col++) {	
+	    	if($rows == 2){
+	    		if($col == 1){
+	    			print "Favorite pokemon: ";
+	    			print $Sinnoh[$rows][$col];
+	    		}
+	    	}
+	    }
+   	}
+>>>>>>> 725d6699b8b68c63e0b524de143b159a763b188a
     echo "</div>";
 
 ?>
