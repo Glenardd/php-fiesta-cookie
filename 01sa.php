@@ -77,9 +77,23 @@
     echo "</div>";
 
 
-    echo "<div id=\"\">";
-    // 5.Declare variable $favorite and assign your favorite specie (use array notation).
-    // ito gagawin mo rose jean, sa loob ng div na to
+    echo "<div id=\"favorite\">";
+    		for($rows=0; $rows < count($Sinnoh); $rows++){
+				for ($cols = 0; $cols < $rows; $col++) {
+				if ($rows==1){
+					if ($cols ==1){
+						echo $Sinnoh[$rows];
+					}
+					
+				}
+			}
+		}
+				//foreach ($Sinnoh as $looping)(
+					//echo $looping "<br>"; 
+				//)
+		    	echo $Sinnoh[$rows][$col];
+		    	echo "</p>";
+		    	echo "</td>";
     echo "</div>";
 
 ?>
