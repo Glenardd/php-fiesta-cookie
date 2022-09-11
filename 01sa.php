@@ -11,7 +11,16 @@
 		array(4,"Charmander","Fire","N/A","Blaze",39,52,43),
 
 		array(5,"Charmeleon","Fire","N/A","Blaze",58,64,58),
-		array(6,"Squirtle","Water","N/A","Torrent",44,48,65)
+
+		array(6,"Charizard","Fire","Flying","Blaze",78,84,78),
+
+		array(7,"Squirtle","Water","N/A","Torrent",44,48,65),
+
+		array(8,"Wartortle","Water","N/A","Torrent",59,63,80),
+
+		array(9,"Blastoise","Water","N/A","Torrent",79,83,100),
+
+		array(10,"Caterpie","Bug","N/A","Shield Dust",50,20,55)
 	);
 
 	echo "<style type=\"text/css\">
@@ -66,4 +75,11 @@
     }
     echo "</table>";
     echo "</div>";
+
+
+    echo "<div id=\"\">"
+    // 5.Declare variable $favorite and assign your favorite specie (use array notation).
+    // ito gagawin mo rose jean, sa loob ng div na to
+    echo "</div>"
+
 ?>
