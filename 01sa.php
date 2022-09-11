@@ -77,7 +77,7 @@
     echo "</div>";
 
 
-    echo "<div id=\"\">"
+    echo "<div id=\"\">";
     // 5.Declare variable $favorite and assign your favorite specie (use array notation).
     // ito gagawin mo rose jean, sa loob ng div na to
     echo "</div>";
