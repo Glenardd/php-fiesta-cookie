@@ -1,4 +1,6 @@
 <?php
+	echo "<div id=\"header\"><h1>TEAM SINNOH</h1></div>";
+
 	$Sinnoh = array(
 		array("id","species","type1","type2","ability","hp","atk","def"),
 
@@ -42,7 +44,18 @@
 			left: 34px;
 
 		}
+
+		#favorite{
+			position:relative;
+			bottom: 30px;
+			left: 55;
+		}
 		
+		#header{
+			position: relative;
+			top: 40px;
+			left: 46px;
+		}
 
 	</style>";
 	$count = 0;
@@ -77,9 +90,17 @@
     echo "</div>";
 
 
-    echo "<div id=\"\">";
-    // 5.Declare variable $favorite and assign your favorite specie (use array notation).
-    // ito gagawin mo rose jean, sa loob ng div na to
+    echo "<div id=\"favorite\">";
+    for($rows=0; $rows < count($Sinnoh); $rows++){
+		for ($col = 0; $col < count($Sinnoh[$rows]); $col++) {	
+	    	if($rows == 2){
+	    		if($col == 1){
+	    			print "Favorite pokemon: ";
+	    			print $Sinnoh[$rows][$col];
+	    		}
+	    	}
+	    }
+   	}
     echo "</div>";
 
 ?>
