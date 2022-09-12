@@ -77,26 +77,6 @@
     echo "</table>";
     echo "</div>";
 
-
-
-    echo "<div id=\"favorite\">";
-    		for($rows=0; $rows < count($Sinnoh); $rows++){
-				for ($cols = 0; $cols < $rows; $col++) {
-				if ($rows==1){
-					if ($cols ==1){
-						echo $Sinnoh[$rows];
-					}
-					
-				}
-			}
-		}
-				//foreach ($Sinnoh as $looping)(
-					//echo $looping "<br>"; 
-				//)
-		    	echo $Sinnoh[$rows][$col];
-		    	echo "</p>";
-		    	echo "</td>";
-
     echo "<div id=\"counting\">";
 	    for($rows=0; $rows < count($Sinnoh); $rows++){
 	    	$count_one++;
