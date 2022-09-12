@@ -58,13 +58,13 @@ echo "<div id=\"header\"><h1>TEAM SINNOH</h1></div>";
 		#sum{
 			position: relative;
 			top: 40px;
-			left: 46px;
+			left: 50px;
 		}
 
 		#ave{
 			position: relative;
 			top: 40px;
-			left: 46px;
+			left: 50px;
 		}
 	</style>";
 	$count = 0;
@@ -112,14 +112,14 @@ echo "<div id=\"header\"><h1>TEAM SINNOH</h1></div>";
     echo "</div>";
 
 echo "<div id=\"sum\">";
-$hp_sum= array(45, 60, 80, 39, 58, 78, 44, 59, 79, 50);
+$hp_sum= array(45, 45, 45, 39, 58, 78, 44, 59, 79, 50);
 
     echo "Sum is " .array_sum($hp_sum). "<br";
     echo " " .count($hp_sum). "<br>";
     echo "</div>";
 
 echo "<div id=\"ave\">";  
-    $ave_attack= array(49,62, 82, 52, 64, 84, 48, 63, 83, 20);
+    $ave_attack= array(49,49, 49, 52, 64, 84, 48, 63, 83, 20);
         $ave_attack = array_sum($ave_attack)/count($ave_attack);
          echo  "Average is " , ($ave_attack);
          echo "</div>";
