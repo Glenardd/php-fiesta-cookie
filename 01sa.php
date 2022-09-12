@@ -26,6 +26,11 @@
 	);
 
 	echo "<style type=\"text/css\">
+		#species{
+			position: relative;
+			left: 50px;
+			bottom: 40px;
+		}
 		table{
 			border:black;
 		}
@@ -40,20 +45,20 @@
 
 		#counting{
 			position:relative;
-			top: 15px;
+			top: 30px;
 			left: 55px;
 
 		}
 
 		#favorite{
 			position:relative;
-			bottom: 30px;
+			bottom: 27px;
 			left: 55;
 		}
 		
 		#header{
 			position: relative;
-			top: 40px;
+			top: 45px;
 			left: 46px;
 		}
 
@@ -77,6 +82,121 @@
     echo "</table>";
     echo "</div>";
 
+    echo "<table rules=\"all\" id=\"species\">";
+    foreach ($Sinnoh as $key1 => $rows) {
+    	foreach ($Sinnoh as $key2 => $cols){
+
+    		if($key1==0){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<th>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</th>";
+    				echo "</tr>";
+    			}
+    		}
+
+    		if($key1==1){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+
+    		if($key1==2){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+    		
+    		if($key1==3){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+    		
+    		if($key1==4){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+    		
+    		if($key1==5){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+    		
+    		if($key1==6){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+    		
+    		if($key1==7){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+
+    		if($key1==8){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+
+    		if($key1==9){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+    		if($key1==10){
+    			if($key2==1){
+    				echo "<tr>";
+    				echo "<td>";
+    				print $Sinnoh[$key1][$key2];
+    				echo "</tr>";
+    				echo "</td>";
+    			}
+    		}
+    	}
+    }
+    echo "</table>";
     echo "<div id=\"counting\">";
 	    for($rows=0; $rows < count($Sinnoh); $rows++){
 	    	$count_one++;
@@ -100,6 +220,6 @@
 	    	}
 	    }
    	}
-    echo "</div>";
+ echo "</div>";
 
 ?>
