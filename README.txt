@@ -3,7 +3,7 @@ Group members:
     
 	Llabores, Arnel; Student Id no. - 202080475
 	
-	Llacuna, Elaine Mae; Student Id no. 202080184
+	Llacuna, Elaine Mae; Student Id no. - 202080184
 	
 	Aban, Rose Jean; Student Id no. - 202080131
 	<type here for next member>
